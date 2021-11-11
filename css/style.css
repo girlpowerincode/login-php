@@ -1,0 +1,133 @@
+:root {
+    --color-main: #3ec471;
+    --color-secundary: #c7f4ff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.login__container,
+.signup__container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form__title,
+.signup-form__title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-form__image,
+.signup-form__image {
+    padding: 10px;
+    border-left: 30px solid var(--color-main);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form__img,
+.signup-form__img {
+    width: 100%;
+    height: auto;
+}
+
+.login-form__form,
+.signup-form__form {
+    padding: 50px 30px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 30px solid var(--color-secundary);
+    border-radius: 50px;
+}
+
+.login-form__btn-login {
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+
+.login-form__btn-signup {
+    width: 100%;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.login-form__btn-signup:hover {
+    color: #fff;
+}
+
+.signup-form__btn-signup {
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+
+.signup-form__btn-login {
+    width: 100%;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.signup-form__btn-login:hover {
+    color: #fff;
+}
+
+.alert-warning {
+    display: none;
+}
+
+.signup__success {
+    display: none;
+}
+
+.signup__fail {
+    display: none;
+}
+
+.dashboard__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard__image {
+    padding: 10px;
+}
+
+.dashboard__text {
+    margin-top: 20px;
+}
+
+.alert-heading {
+    font-weight: bold;
+}
+
+.dashboard__btn-logout {
+    float: right;
+}
+
+@media only screen and (max-width: 770px) {
+    .login-form__image,
+    .signup-form__image {
+        display: none;
+    }
+    .login__box,
+    .signup__box {
+        justify-content: center;
+    }
+}
